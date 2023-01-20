@@ -1,4 +1,9 @@
 body {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  transition: background 500ms;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +15,67 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#quote-box {
+  align-items: center;
+  background-color: rgba(235, 235, 235, 1);
+  border: dashed 2px black;
+  border-radius: 30px;
+  box-shadow: 5px 5px 25px black;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  justify-content: center;
+  margin: 20px 0px;
+  width: 500px;
+  text-align: center;
+}
+
+.quote-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 45%;
+  justify-content: center;
+  width: 90%;
+}
+
+#text {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+#author {
+  color: black;
+  font-size: 1.1em;
+}
+
+.quote-button {
+  background-color: rgba(150, 150, 150, 1);
+  border-radius: 25px;
+  box-shadow: 10px 10px 25px black;
+  cursor: pointer;
+  transition: transform 150ms ease-in-out, box-shadow 150ms ease-in-out;
+  margin: 20px;
+  padding: 10px;
+}
+
+.quote-button:active {
+  transform: translateY(10px);
+  box-shadow: 3px 3px 10px black;
+}
+
+.socialBox {
+  align-content: center;
+  display: flex;
+  justify-content: center;
+}
+
+.fa-brands {
+  cursor: pointer;
+  font-size: 3em;
+  margin: 0.3em 2em;
+  text-decoration: none;
+  -webkit-text-stroke: black 2px;
 }
